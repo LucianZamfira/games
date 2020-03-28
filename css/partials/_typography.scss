@@ -1,0 +1,377 @@
+body {
+	color: $primary-text-color;
+	font: 400 14px/1.4 $site-font, Arial, sans-serif;
+
+	.text {
+		&--primary {
+			color: $primary-color;
+		}
+
+		&--secondary {
+			color: $secondary-color;
+		}
+
+		&--blue {
+			color: $blue54;
+		}
+
+		&--gray {
+			color: $black34;
+		}
+
+		&--sky {
+			color: $sky;
+		}
+
+		&--twitter {
+			color: $twitter-color;
+		}
+
+		&--facebook {
+			color: $facebook-color;
+		}
+
+		&--linkedin {
+			color: $linkedin-color;
+		}
+
+		&--bluel54 {
+			color: $blue54;
+		}
+
+		&--green {
+			color: $leaf;
+		}
+
+		&--black80 {
+			color: $black80;
+		}
+
+		&--black34 {
+			color: $black34;
+		}
+
+		&--alert {
+			color: $alert-color;
+		}
+
+		&--inform {
+			color: $inform-color;
+		}
+
+		&--success {
+			color: $success-color;
+		}
+
+		&--error {
+			color: $error-color;
+		}
+
+		&--strong {
+			font-weight: 600;
+		}
+
+		&--thin {
+			font-weight: 400;
+		}
+
+		&--emphasis {
+			font-size: 1.457em;
+			font-weight: 500;
+		}
+
+		&-group {
+			margin: 25px 0;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 600;
+	font-family: $headlines-font;
+	line-height: 1.2;
+	margin-bottom: 12px;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 2em;
+
+	&.headline--design {
+		font-size: 1.857em;
+	}
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4,
+h5 {
+	font-size: 1.2em;
+}
+
+p,
+ul,
+ol {
+	font-size: 1.12em;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.headline {
+	font-size: 1.8em;
+
+	&-page {
+		color: #fff;
+		font-size: 3.429em;
+		line-height: 1.3;
+		margin-right: auto;
+		// font-weight: 700;
+		// text-transform: uppercase;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 3.6em;
+		}
+	}
+
+	&-section {
+		font-size: 2.571em;
+		// text-transform: uppercase;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 2.571em;
+		}
+	}
+
+	&-content {
+		font-size: 1.6em;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 2.2em;
+		}
+	}
+
+	&-description {
+		font-size: 1.3em;
+	}
+
+	&--design {
+		display: inline-block;
+		font-size: 2.571em;
+		line-height: 1.6;
+		margin-bottom: 40px;
+		padding-bottom: 25px;
+		position: relative;
+
+		.position {
+			display: block;
+			font-size: 0.7em;
+			font-weight: normal;
+		}
+
+		&:before,
+		&:after {
+			background-color: $black15;
+			content: " ";
+			height: 2px;
+			left: 0;
+			position: absolute;
+			z-index: -1;
+		}
+
+		&:before {
+			bottom: 0;
+			width: 200px;
+		}
+
+		&:after {
+			bottom: 7px;
+			width: 250px;
+		}
+
+		&.centered {
+			display: block;
+			text-align: center;
+
+			&:before,
+			&:after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+}
+
+.has-byline {
+	margin-bottom: 5px;
+}
+
+.slogan {
+	color: $secondary-color;
+	font-family: "Great Vibes";
+	font-size: 2.286em;
+	font-weight: normal;
+	line-height: 1.2;
+	padding-left: 38px;
+	padding-top: 20px;
+	position: relative;
+
+	&:before {
+		color: $primary-color;
+		content: "\e919";
+		font-family: "icomoon";
+		font-size: 20px;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}
+
+.disclaimer {
+	align-items: center;
+	display: flex;
+	line-height: 1;
+
+	i {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}
+
+.subheadline {
+	font-size: 1.4em;
+
+	&.emphasis {
+		font-size: 1.8em;
+	}
+
+	&.slim {
+		font-weight: 400;
+	}
+
+	&-page {
+		color: #fff;
+		font-size: 2em;
+		font-weight: 700;
+		line-height: 1.3;
+		margin-right: auto;
+		// text-transform: uppercase;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 2.6em;
+		}
+	}
+
+	&-section {
+		font-size: 1.8em;
+		// text-transform: uppercase;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 2em;
+		}
+	}
+
+	&-content {
+		font-size: 1.2em;
+
+		&.slim {
+			font-weight: 400;
+		}
+
+		&.emphasis {
+			font-size: 2.2em;
+		}
+	}
+
+	&--line {
+		font-weight: normal;
+		margin-bottom: 25px;
+		position: relative;
+		text-align: center;
+
+		.inner-text {
+			background-color: $white;
+			padding: 0 2rem;
+			position: relative;
+			z-index: 1;
+		}
+
+		&:before {
+			background-color: $primary-color;
+			content: " ";
+			height: 1px;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 50%;
+		}
+	}
+}
+
+.scroll-group {
+	max-height: 260px;
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 6px;
+
+		&-track {
+			background-color: $black8;
+		}
+
+		&-thumb {
+			background-color: $black34;
+			padding-right: 3px;
+		}
+	}
+}
+
+.description {
+	font-size: 1.3em;
+}
+
+// Mobiles
+@media (max-width: 575px) {
+	.headline {
+		&-page {
+			font-size: 2em;
+			margin-bottom: 28px;
+		}
+
+		&-section {
+			font-size: 1.6em;
+
+			&.emphasis {
+				font-size: 2.2em;
+			}
+		}
+	}
+}

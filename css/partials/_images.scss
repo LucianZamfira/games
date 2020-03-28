@@ -1,0 +1,82 @@
+.responsive-image {
+	height: auto;
+	max-width: 100%;
+	outline: medium none;
+	width: 100%;
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.image {
+	display: block;
+	outline: medium none;
+
+	&--inline {
+		display: inline-block;
+	}
+}
+
+picture {
+	display: inline-block;
+	line-height: 0;
+	outline: medium none;
+}
+
+.avatar {
+	&-rounded {
+		border-radius: 50%;
+		border: 2px solid $white;
+		height: 110px;
+		margin-bottom: 20px;
+		overflow: hidden;
+		width: 110px;
+	}
+}
+
+figure {
+	display: flex;
+	position: relative;
+}
+
+.figure {
+	&__spots {
+		bottom: 0;
+		left: 0;
+		list-style: none;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	&__spot {
+		background-color: rgba($color: #000000, $alpha: 0.4);
+		border-radius: 50%;
+		border: 6px solid red;
+		color: white;
+		cursor: pointer;
+		font-family: $headlines-font;
+		font-size: 1.6em;
+		font-weight: 600;
+		height: 80px;
+		line-height: 60px;
+		opacity: 0;
+		position: absolute;
+		text-align: center;
+		transition: all 0.2s ease-in-out;
+		width: 80px;
+
+		&.show {
+			opacity: 1;
+		}
+
+		&:hover {
+			transform: scale(1.28);
+			z-index: 100;
+		}
+	}
+}
