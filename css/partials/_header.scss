@@ -8,6 +8,8 @@ header {
 	&::after {
 		background-color: transparent;
 		background-image: url("../images/zig-zag-down.png");
+		background-position-y: top;
+		background-repeat: repeat-x;
 		content: " ";
 		height: 9px;
 		left: 0;
