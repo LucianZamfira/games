@@ -66,8 +66,9 @@ body {
 		}
 
 		.congratulations {
-			opacity: 1;
-			pointer-events: unset;
+			// opacity: 1;
+			display: flex;
+			// pointer-events: unset;
 			z-index: 9999;
 		}
 	}
@@ -158,8 +159,9 @@ section {
 	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
 	left: 0;
 	margin-top: 25vh;
-	opacity: 0;
-	pointer-events: none;
+	// opacity: 0;
+	display: none;
+	// pointer-events: none;
 	position: fixed;
 	text-align: center;
 	text-decoration: none;
