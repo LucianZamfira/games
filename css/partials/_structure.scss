@@ -70,35 +70,16 @@ section {
 }
 
 .section {
-	&--dark {
-		background-color: $black8;
-	}
-
-	&--gray {
-		&:before {
-			background-color: $secondary-site-background;
-			bottom: 0;
-			content: " ";
-			left: 0;
-			position: absolute;
-			right: 0;
-			top: 0;
-			z-index: -1;
-		}
-	}
-
 	&--game {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1640px;
+
 		.row--game {
 			background-color: white;
 			box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
 			margin: 0;
 			padding: 24px 12px;
-		}
-	}
-
-	&--contact {
-		.textarea {
-			min-height: unset;
 		}
 	}
 }
@@ -160,7 +141,7 @@ hr {
 	cursor: pointer;
 	position: fixed;
 	right: 40px;
-	top: 40px;
+	top: 60px;
 	width: 40px;
 
 	&.muted {
