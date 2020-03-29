@@ -38,9 +38,9 @@ $(document).ready(function() {
 		audioSpark.play();
 
 		if ($('.figure__spot.show').length / 2 === 10) {
-			$('.congratulations').addClass('show');
-			console.log('Felicitari, ai terminat jocul!');
-			alert('Felicitari, ai terminat jocul!');
+			$('.congratulations').toggleClass('show');
+			// console.log('Felicitari, ai terminat jocul!');
+			// alert('Felicitari, ai terminat jocul!');
 		}
 	});
 
