@@ -139,18 +139,12 @@ hr {
 
 .mute-audio {
 	cursor: pointer;
-	position: fixed;
-	right: 40px;
-	top: 60px;
+	color: $primary-color;
 	width: 40px;
 
 	&.muted {
 		opacity: 0.8;
-
-		img {
-			color: $primary-color;
-			fill: $primary-color;
-		}
+		color: $secondary-color;
 	}
 }
 
@@ -163,6 +157,13 @@ hr {
 				flex-direction: column;
 			}
 		}
+	}
+}
+
+// GAME PAGE
+.game-page {
+	.home-logo {
+		height: 100px;
 	}
 }
 
