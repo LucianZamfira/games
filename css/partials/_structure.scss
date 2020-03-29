@@ -154,7 +154,8 @@ section {
 }
 
 .congratulations {
-	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+	// filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+	filter: drop-shadow(20px 50px 120px $primary-color);
 	left: 50%;
 	opacity: 0;
 	pointer-events: none;
@@ -162,10 +163,9 @@ section {
 	text-align: center;
 	text-decoration: none;
 	top: 50%;
-	transform: translateY(-50%) translateX(-50%);
+	transform: translate3d(-50%, -50%, 0);
 	transition: all 0.2s ease-in-out;
 	width: 380px;
-	z-index: -1;
 
 	img {
 		animation: infinite-spinning 40s infinite linear;
