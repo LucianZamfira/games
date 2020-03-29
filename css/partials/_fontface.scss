@@ -1,7 +1,10 @@
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Lato:400,700,900|Open+Sans:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Great+Vibes|Lato:400,700,900|Open+Sans:300,400,600,700&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Comic+Neue:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap&subset=latin-ext");
+// @import url("https://fonts.googleapis.com/css?family=Concert+One&display=swap&subset=latin-ext");
+// @import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Titan+One&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900&display=swap&subset=latin-ext');
 
 @font-face {
 	font-family: "icomoon";
@@ -65,6 +68,21 @@
 	}
 }
 
+.icon-heart-full:before {
+	content: "\f004";
+}
+.icon-star-full:before {
+	content: "\f005";
+}
+.icon-certificate-full:before {
+	content: "\f0a3";
+}
+.icon-cloud-full:before {
+	content: "\f0c2";
+}
+.icon-ribbon:before {
+	content: "\e90e";
+}
 .icon-check:before {
 	content: "\e900";
 }
@@ -106,4 +124,67 @@
 }
 .icon-zoom-out:before {
 	content: "\e90d";
+}
+.icon-heart-line:before {
+	content: "\e90f";
+}
+.icon-cloud-line:before {
+	content: "\e911";
+}
+.icon-star-line:before {
+	content: "\e910";
+}
+.icon-tv-line:before {
+	content: "\e912";
+}
+.icon-settings-line:before {
+	content: "\e913";
+}
+.icon-bulb-line:before {
+	content: "\e914";
+}
+.icon-pen-line:before {
+	content: "\e915";
+}
+.icon-location-line:before {
+	content: "\e916";
+}
+.icon-bubble-line:before {
+	content: "\e917";
+}
+.icon-phone-line:before {
+	content: "\e918";
+}
+.icon-news-line:before {
+	content: "\e919";
+}
+.icon-mail-line:before {
+	content: "\e91a";
+}
+.icon-note-line:before {
+	content: "\e91b";
+}
+.icon-clock-line:before {
+	content: "\e91c";
+}
+.icon-paperplane-line:before {
+	content: "\e91d";
+}
+.icon-music-line:before {
+	content: "\e91e";
+}
+.icon-study-line:before {
+	content: "\e91f";
+}
+.icon-lab-line:before {
+	content: "\e920";
+}
+.icon-clip-line:before {
+	content: "\e921";
+}
+.icon-calendar-line:before {
+	content: "\e922";
+}
+.icon-world-line:before {
+	content: "\e923";
 }

@@ -107,6 +107,7 @@
 		font-size: 13px;
 		height: 100%;
 		padding: 1rem;
+		position: relative;
 		text-align: initial;
 
 		.card-title {
@@ -132,6 +133,30 @@
 
 		.card-paragraph {
 			margin-top: auto;
+		}
+	}
+
+	&__ribbon {
+		align-items: center;
+		color: $secondary-color;
+		display: flex;
+		font-size: 90px;
+		justify-content: center;
+		position: absolute;
+		right: -20px;
+		top: -40px;
+		z-index: 10;
+
+		.inner-text {
+			color: white;
+			font-size: 14px;
+			left: 0;
+			line-height: 1;
+			margin-top: -7px;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 50%;
 		}
 	}
 

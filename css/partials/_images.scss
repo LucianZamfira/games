@@ -69,15 +69,17 @@ figure {
 		opacity: 0;
 		position: absolute;
 		text-align: center;
+		transform: scale(0.8);
 		transition: all 0.2s ease-in-out;
 		width: 80px;
 
 		&.show {
 			opacity: 1;
+			transform: scale(1);
 		}
 
 		&:hover {
-			transform: scale(1.28);
+			// transform: scale(1.28);
 			z-index: 100;
 		}
 	}
@@ -101,11 +103,13 @@ figure {
 			align-items: center;
 			border-width: 3px;
 			display: flex;
-			font-size: 1.4em;
+			font-size: 1.2em;
 			font-weight: 300;
 			height: 45px;
 			justify-content: center;
-			line-height: 35px;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-weight: 500;
+			line-height: 1;
 			width: 45px;
 		}
 	}
