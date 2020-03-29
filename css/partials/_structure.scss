@@ -67,6 +67,7 @@ body {
 
 		.congratulations {
 			opacity: 1;
+			pointer-events: unset;
 			z-index: 9999;
 		}
 	}
@@ -176,7 +177,7 @@ section {
 		margin: -55px 0 0;
 		position: absolute;
 		right: 0;
-		top: 48%;
+		top: 50%;
 	}
 }
 
@@ -399,7 +400,7 @@ hr {
 
 @media (max-width: 489px) {
 	.congratulations {
-		font-size: 12px;
-		width: 300px;
+		font-size: 11px;
+		width: 320px;
 	}
 }
