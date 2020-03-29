@@ -144,7 +144,7 @@ section {
 	}
 }
 
-@keyframes infinite-spinning {
+@keyframes spinning {
 	from {
 		transform: rotate(0deg);
 	}
@@ -167,8 +167,11 @@ section {
 	width: 380px;
 	z-index: -1;
 
-	img {
-		// animation: infinite-spinning 40s infinite linear;
+	picture {
+		animation: spinning 40s infinite linear;
+		display: block;
+		margin: 0;
+		padding: 0;
 	}
 
 	.inner-text {

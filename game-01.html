@@ -106,7 +106,13 @@
 
 	<!-- Congratulations start -->
 	<a href="game-01.html" title="Joacă încă o dată" class="congratulations">
-		<img src="images/congratulations.png" alt="congratulations" class="responsive-image" />
+		<!-- <img src="images/congratulations.png" alt="congratulations" class="responsive-image" /> -->
+		<picture>
+			<source srcset="images/congratulations.webp" type="image/webp">
+			<source srcset="images/congratulations.png" type="image/jpeg">
+			<img src="images/congratulations.png" alt="congratulations" class="responsive-image" />
+		</picture>
+
 		<h2 class="inner-text"><strong class="emphasis">Felicitări</strong><br /> ai<br /> câştigat!</h2>
 	</a>
 	<!-- Congratulations end -->
