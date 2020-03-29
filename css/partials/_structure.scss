@@ -154,15 +154,17 @@ section {
 }
 
 .congratulations {
+	color: $primary-color;
 	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
 	left: 50%;
+	margin-top: 25vh;
 	opacity: 0;
 	pointer-events: none;
 	position: fixed;
 	text-align: center;
 	text-decoration: none;
-	top: 50%;
-	transform: translateY(-50%) translateX(-50%);
+	top: 0;
+	transform: translateX(-50%);
 	transition: all 0.2s ease-in-out;
 	width: 380px;
 	z-index: -1;
@@ -405,5 +407,9 @@ hr {
 	.congratulations {
 		font-size: 11px;
 		width: 320px;
+
+		.inner-text {
+			margin-top: -45px;
+		}
 	}
 }
