@@ -132,6 +132,46 @@ section {
 	}
 }
 
+@keyframes infinite-spinning {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.congratulations {
+	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+	left: 50%;
+	width: 380px;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	transition: all 0.2s ease-in-out;
+	z-index: 100;
+
+	&.show {
+		opacity: 1;
+	}
+
+	img {
+		animation: infinite-spinning 40s infinite linear;
+	}
+
+	.inner-text {
+		font-weight: 300;
+		left: 0;
+		margin: -55px 0 0;
+		position: absolute;
+		right: 0;
+		top: 48%;
+	}
+}
+
 .help {
 	margin-bottom: 20px;
 }
@@ -279,6 +319,62 @@ hr {
 			height: 80px;
 		}
 	}
+}
+
+// Mobiles
+@media (max-width: 575px) {
+	// GAME 01
+	.game01 {
+		.spot-1 {
+			left: calc(11% - 2%);
+			top: calc(12% - 2%);
+		}
+
+		.spot-2 {
+			left: calc(3% - 2%);
+			top: calc(46% - 2%);
+		}
+
+		.spot-3 {
+			left: calc(16% - 2%);
+			top: calc(76% - 2%);
+		}
+
+		.spot-4 {
+			left: calc(38% - 2%);
+			top: calc(42% - 2%);
+		}
+
+		.spot-5 {
+			left: calc(37% - 2%);
+			top: calc(9% - 2%);
+		}
+
+		.spot-6 {
+			left: calc(67% - 2%);
+			top: calc(9% - 2%);
+		}
+
+		.spot-7 {
+			left: calc(53% - 2%);
+			top: calc(50% - 2%);
+		}
+
+		.spot-8 {
+			left: calc(69% - 2%);
+			top: calc(60% - 2%);
+		}
+
+		.spot-9 {
+			left: calc(73% - 2%);
+			top: calc(32% - 2%);
+		}
+
+		.spot-10 {
+			left: calc(88% - 2%);
+			top: calc(32% - 2%);
+		}
+	}
 
 	.section {
 		&--game {
@@ -293,6 +389,9 @@ hr {
 	}
 }
 
-// Mobiles
-@media (max-width: 575px) {
+@media (max-width: 489px) {
+	.congratulations {
+		font-size: 12px;
+		width: 300px;
+	}
 }

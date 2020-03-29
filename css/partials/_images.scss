@@ -56,16 +56,19 @@ figure {
 	}
 
 	&__spot {
+		align-items: center;
 		background-color: rgba($color: #000000, $alpha: 0.4);
 		border-radius: 50%;
 		border: 6px solid red;
 		color: white;
 		cursor: pointer;
-		font-family: $headlines-font;
+		display: flex;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 		font-size: 1.6em;
-		font-weight: 600;
+		font-weight: 500;
 		height: 80px;
-		line-height: 60px;
+		justify-content: center;
+		line-height: 1;
 		opacity: 0;
 		position: absolute;
 		text-align: center;
@@ -77,40 +80,28 @@ figure {
 			opacity: 1;
 			transform: scale(1);
 		}
-
-		&:hover {
-			// transform: scale(1.28);
-			z-index: 100;
-		}
 	}
 }
 
 // Tablets
 @media (max-width: 767px) {
-	.figure {
-		&__spot {
-			height: 65px;
-			line-height: 50px;
-			width: 65px;
-		}
-	}
+	// .figure {
+	// 	&__spot {
+	// 		height: 65px;
+	// 		line-height: 50px;
+	// 		width: 65px;
+	// 	}
+	// }
 }
 
 // Mobiles
-@media (max-width: 659px) {
+@media (max-width: 459px) {
 	.figure {
 		&__spot {
-			align-items: center;
 			border-width: 3px;
-			display: flex;
 			font-size: 1.2em;
-			font-weight: 300;
-			height: 45px;
-			justify-content: center;
-			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-			font-weight: 500;
-			line-height: 1;
-			width: 45px;
+			height: 50px;
+			width: 50px;
 		}
 	}
 }

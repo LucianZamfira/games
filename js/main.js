@@ -26,15 +26,27 @@ $(document).ready(function() {
 		$(this).toggleClass('muted');
 	});
 
-	$('.figure__spot').on('click', function() {
+	$('.figure__spot').on('click', function(event) {
+		event.stopPropagation();
+
 		var spot = '.' + $(this).data('spot');
 		var audioSpark = document.querySelector('.chime');
 
 		$(spot).toggleClass('show');
+		audioSpark.pause();
+		audioSpark.currentTime = 0;
 		audioSpark.play();
 
 		if ($('.figure__spot.show').length / 2 === 10) {
+			$('.congratulations').addClass('show');
 			console.log('Felicitari, ai terminat jocul!');
 		}
+	});
+
+	$('.figure__container').on('click', function() {
+		var audioBoing = document.querySelector('.boing');
+		audioBoing.pause();
+		audioBoing.currentTime = 0;
+		audioBoing.play();
 	});
 });
