@@ -154,24 +154,21 @@ section {
 }
 
 .congratulations {
-	// filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
-	filter: drop-shadow(20px 50px 120px $primary-color);
-	// left: 50%;
-	background-color: black;
+	background-color: transparent;
 	left: 0;
 	opacity: 0;
 	pointer-events: none;
 	position: fixed;
+	right: 0;
 	text-align: center;
 	text-decoration: none;
-	// top: 50%;
-	top: 0;
-	// transform: translate3d(-50%, -50%, 0);
+	top: 30%;
 	transition: all 0.2s ease-in-out;
-	width: 380px;
 
 	img {
 		animation: infinite-spinning 40s infinite linear;
+		filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+		width: 380px;
 	}
 
 	.inner-text {
@@ -404,6 +401,9 @@ hr {
 @media (max-width: 489px) {
 	.congratulations {
 		font-size: 11px;
-		width: 320px;
+
+		img {
+			width: 320px;
+		}
 	}
 }
