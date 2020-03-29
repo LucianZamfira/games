@@ -3,6 +3,7 @@ function simulateClick(element) {
 }
 
 $(document).ready(function() {
+	var actives = 0;
 	// Card click start
 	$('.card--clickable .link').on('click', function(event) {
 		event.stopPropagation();
@@ -28,7 +29,9 @@ $(document).ready(function() {
 
 	$('.figure__spot').on('click', function(event) {
 		event.stopPropagation();
+	});
 
+	$('.figure__spot').on('mouseup', function() {
 		var spot = '.' + $(this).data('spot');
 		var audioSpark = document.querySelector('.chime');
 
@@ -37,8 +40,19 @@ $(document).ready(function() {
 		audioSpark.currentTime = 0;
 		audioSpark.play();
 
-		if ($('.figure__spot.show').length / 2 === 10) {
+		actives = $('.figure__spot.show').length / 2;
+
+		$('.qt').text(10 - actives);
+
+		if (actives === 9) {
+			$('.plural').text('ă');
+			$('.singular').text('');
+		} else if (actives === 10) {
+			$('.headline-section').addClass('hide');
 			$('body').addClass('youwon');
+		} else {
+			$('.plural').text('e');
+			$('.singular').text('u');
 		}
 	});
 
