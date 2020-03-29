@@ -156,7 +156,7 @@ section {
 .congratulations {
 	color: $primary-color;
 	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
-	left: 50%;
+	left: 0;
 	margin-top: 25vh;
 	opacity: 0;
 	pointer-events: none;
@@ -164,7 +164,7 @@ section {
 	text-align: center;
 	text-decoration: none;
 	top: 0;
-	transform: translateX(-50%);
+	// transform: translateX(-50%);
 	transition: all 0.2s ease-in-out;
 	width: 380px;
 	z-index: -1;
