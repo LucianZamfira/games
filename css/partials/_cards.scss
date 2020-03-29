@@ -341,87 +341,8 @@
 	}
 }
 
-.masonry-cards {
-	column-count: 3;
-	column-gap: 1.5em;
-
-	.card {
-		&--vertical {
-			display: inline-block;
-		}
-	}
-}
-
-.offset-cards {
-	position: relative;
-	color: $white;
-	font-size: 13px;
-	margin: 40px 0;
-
-	* {
-		position: relative;
-		z-index: 1;
-	}
-
-	[class*="col-"] {
-		background-color: rgba($primary-color, 0.8);
-		padding: 30px 20px;
-		position: relative;
-		transition: background-color 0.15s ease-in-out;
-
-		&:hover {
-			background-color: rgba($secondary-color, 0.8);
-		}
-
-		&:last-child {
-			&:after {
-				background-color: rgba($primary-color, 0.8);
-				bottom: 0;
-				content: " ";
-				left: 100%;
-				position: absolute;
-				top: 0;
-				width: 100vw;
-			}
-		}
-
-		h4 {
-			font-weight: normal;
-			margin-bottom: 20px;
-		}
-
-		p {
-			font-size: 0.9em;
-			margin: 0;
-		}
-	}
-
-	&:after {
-		background-image: url(../images/pollock-unsplash.png);
-		background-size: cover;
-		background-position: center center;
-		content: " ";
-		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		width: 100vw;
-	}
-}
-
 // Responsive carousel
 @media (max-width: 1450px) {
-	// .lawyers-carousel {
-	// 	padding: 0 50px;
-
-	// 	.owl-prev {
-	// 		left: 0;
-	// 	}
-
-	// 	.owl-next {
-	// 		right: 0;
-	// 	}
-	// }
 }
 
 // Desktops
@@ -430,12 +351,13 @@
 
 // Tablets
 @media (max-width: 767px) {
-	.masonry-cards {
-		columns: 2;
+	.card {
+		&__ribbon {
+			font-size: 80px;
+			right: -10px;
 
-		.card {
-			&--vertical {
-				display: block;
+			.inner-text {
+				font-size: 14px;
 			}
 		}
 	}
@@ -443,48 +365,8 @@
 
 // Nor Mobiles, nor Tablets
 @media (max-width: 659px) {
-	.offset-cards {
-		[class*="col-"] {
-			flex: 0 0 100%;
-			margin-bottom: 0;
-			max-width: 100%;
-
-			&:after {
-				display: none;
-			}
-		}
-
-		&:after {
-			width: 100%;
-		}
-	}
 }
 
 // Mobiles
 @media (max-width: 575px) {
-	.card {
-		&--timeline {
-			max-width: 90%;
-			padding-left: 40px;
-			padding-right: 0;
-
-			&.gd-icon {
-				display: none;
-			}
-		}
-
-		&__icon {
-			width: 70px;
-		}
-
-		&__layer {
-			.title {
-				font-size: 1.8em;
-			}
-		}
-	}
-
-	.masonry-cards {
-		columns: 1;
-	}
 }
