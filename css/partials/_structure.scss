@@ -155,7 +155,7 @@ section {
 
 .congratulations {
 	color: $primary-color;
-	// filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+	filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
 	left: 50%;
 	margin-top: 25vh;
 	opacity: 0;

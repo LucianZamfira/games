@@ -38,8 +38,10 @@ picture {
 }
 
 figure {
-	display: flex;
+	// display: flex;
+	display: block;
 	position: relative;
+	line-height: 0;
 }
 
 .figure {
