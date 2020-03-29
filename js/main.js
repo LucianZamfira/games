@@ -3,7 +3,7 @@ function simulateClick(element) {
 }
 
 $(document).ready(function() {
-	// Article click start
+	// Card click start
 	$('.card--clickable .link').on('click', function(event) {
 		event.stopPropagation();
 		console.log('clicked', this);
@@ -12,30 +12,29 @@ $(document).ready(function() {
 	$('.card--clickable').on('click', function() {
 		simulateClick(this);
 	});
-	// Article click end
+	// Card click end
 
 	// Init audio
-	var audioElement = document.querySelector('audio');
+	var audioElement = document.querySelector('.bubble');
 	if (audioElement !== null) {
 		audioElement.volume = 0.2;
-		// audioElement.pause();
 	}
-	// audio.muted = true;
-	// audio.muted = !document.querySelector('audio').muted;
 
 	$('.mute-audio').on('click', function() {
 		event.preventDefault();
-		// audio.muted = true;
-		// audio.volume = 0.2;
-		// audio.muted = false;
+		audioElement.muted = !document.querySelector('.bubble').muted;
 		$(this).toggleClass('muted');
-		audioElement.muted = !document.querySelector('audio').muted;
-		// audioElement.play();
 	});
 
 	$('.figure__spot').on('click', function() {
 		var spot = '.' + $(this).data('spot');
+		var audioSpark = document.querySelector('.chime');
+
 		$(spot).toggleClass('show');
-		console.log(spot);
+		audioSpark.play();
+
+		if ($('.figure__spot.show').length / 2 === 10) {
+			console.log('Felicitari, ai terminat jocul!');
+		}
 	});
 });
