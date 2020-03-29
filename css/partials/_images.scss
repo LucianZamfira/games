@@ -98,10 +98,13 @@ figure {
 @media (max-width: 659px) {
 	.figure {
 		&__spot {
+			align-items: center;
 			border-width: 3px;
+			display: flex;
 			font-size: 1.4em;
 			font-weight: 300;
 			height: 45px;
+			justify-content: center;
 			line-height: 35px;
 			width: 45px;
 		}
