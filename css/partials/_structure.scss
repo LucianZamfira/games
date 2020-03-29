@@ -168,7 +168,10 @@ section {
 	img {
 		animation: infinite-spinning 40s infinite linear;
 		filter: drop-shadow(20px 50px 120px $primary-color) drop-shadow(0 0 120px $primary-color) drop-shadow(0 0 80px $primary-color);
+		transform: rotate(360deg);
 		width: 380px;
+		position: relative;
+		z-index: 9999;
 	}
 
 	.inner-text {
