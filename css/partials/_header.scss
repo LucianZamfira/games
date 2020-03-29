@@ -324,9 +324,23 @@
 
 header {
 	// border-bottom: 2px solid $black15;
+	background-color: white;
+	margin-bottom: 9px;
+	position: relative;
 	color: $primary-text-color;
 	color: $black00;
 	z-index: 10;
+
+	&::after {
+		background-color: transparent;
+		background-image: url("../images/zig-zag-down.png");
+		top: 100%;
+		content: " ";
+		height: 9px;
+		left: 0;
+		position: absolute;
+		right: 0;
+	}
 
 	nav {
 		align-items: center;
@@ -345,8 +359,9 @@ header {
 
 .home-logo {
 	display: block;
+	height: 140px;
+	margin: 20px 0;
 	position: relative;
-	height: 80px;
 
 	.image {
 		border: medium none;

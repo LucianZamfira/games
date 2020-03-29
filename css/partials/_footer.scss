@@ -1,6 +1,20 @@
 .footer {
-	border-top: 2px solid $black15;
+	background-color: white;
 	color: $primary-text-color;
+	position: relative;
+	margin-top: 9px;
+
+	&::before {
+		background-color: transparent;
+		background-image: url("../images/zig-zag.png");
+		bottom: 100%;
+		content: " ";
+		display: block;
+		height: 9px;
+		left: 0;
+		position: absolute;
+		right: 0;
+	}
 
 	.text-group {
 		margin: 0;

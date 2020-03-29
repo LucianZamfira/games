@@ -1,18 +1,19 @@
 .button {
 	-webkit-font-smoothing: antialiased;
 	background-color: $primary-color;
+	border-radius: 10px;
 	border: medium none;
 	color: $white;
 	cursor: pointer;
 	display: inline-block;
-	font: 600 1.143em/1 $site-font, Arial, sans-serif;
+	font: bold 1.143em/1 $site-font, Arial, sans-serif;
 	justify-content: center;
 	padding: 12px 24px;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: all 0.18s ease-in-out;
+	transition: all 0.25s ease-in-out;
 
 	&:focus {
 		outline: medium none;
@@ -20,6 +21,7 @@
 
 	&:hover {
 		background-color: darken($primary-color, 8%);
+		box-shadow: 0 14px 26px 0 rgba($primary-color, 0.6);
 		text-decoration: none;
 	}
 
