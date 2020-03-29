@@ -93,3 +93,15 @@ figure {
 		}
 	}
 }
+
+// Mobiles
+@media (max-width: 659px) {
+	.figure {
+		&__spot {
+			border-width: 3px;
+			height: 45px;
+			line-height: 35px;
+			width: 45px;
+		}
+	}
+}

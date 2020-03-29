@@ -1,9 +1,8 @@
 header {
 	background-color: white;
 	margin-bottom: 9px;
+	padding: 0 20px;
 	position: relative;
-	color: $primary-text-color;
-	color: $black00;
 	z-index: 10;
 
 	&::after {
@@ -71,4 +70,8 @@ header {
 		font-size: 1.714em;
 		line-height: 1;
 	}
+}
+
+// Mobiles
+@media (max-width: 659px) {
 }

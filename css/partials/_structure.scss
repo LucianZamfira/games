@@ -60,7 +60,7 @@ body {
 
 section {
 	display: inline-block;
-	padding: 20px;
+	padding: 20px 0;
 	position: relative;
 	width: 100%;
 
@@ -234,8 +234,16 @@ hr {
 
 // Laptops
 @media (max-width: 1224px) {
-	.col-md-12 {
-		margin-bottom: 24px;
+	.section {
+		&--game {
+			.col-md-12 {
+				margin-bottom: 24px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -249,6 +257,23 @@ hr {
 
 // Mobiles
 @media (max-width: 659px) {
+	.game-page {
+		.home-logo {
+			height: 80px;
+		}
+	}
+
+	.section {
+		&--game {
+			.row--game {
+				padding: 12px 0;
+			}
+
+			.col-md-12 {
+				margin-bottom: 12px;
+			}
+		}
+	}
 }
 
 // Mobiles
