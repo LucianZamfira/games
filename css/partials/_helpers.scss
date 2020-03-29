@@ -259,10 +259,13 @@
 		}
 	}
 
-	.hide,
-	.display-none,
-	.hidden {
+	.display-none {
 		display: none;
+	}
+
+	.hide,
+	.hidden {
+		opacity: 0;
 	}
 
 	.op {
