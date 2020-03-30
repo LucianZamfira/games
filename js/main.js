@@ -42,6 +42,7 @@ $(document).ready(function() {
 
 		actives = $('.figure__spot.show').length / 2;
 
+		$('.guessed').text(actives);
 		$('.qt').text(10 - actives);
 
 		if (actives === 9) {
