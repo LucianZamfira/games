@@ -402,6 +402,112 @@ hr {
 	}
 }
 
+// GAME 04
+.game04 {
+	.spot-1 {
+		left: calc(20%);
+		top: calc(22%);
+	}
+
+	.spot-2 {
+		left: calc(33%);
+		top: calc(75%);
+	}
+
+	.spot-3 {
+		left: calc(8%);
+		top: calc(76%);
+	}
+
+	.spot-4 {
+		left: calc(41%);
+		top: calc(5%);
+	}
+
+	.spot-5 {
+		left: calc(1%);
+		top: calc(53%);
+	}
+
+	.spot-6 {
+		left: calc(62%);
+		top: calc(68%);
+	}
+
+	.spot-7 {
+		left: calc(40%);
+		top: calc(44%);
+	}
+
+	.spot-8 {
+		left: calc(68%);
+		top: calc(52%);
+	}
+
+	.spot-9 {
+		left: calc(66%);
+		top: calc(18%);
+	}
+
+	.spot-10 {
+		left: calc(30%);
+		top: calc(12%);
+	}
+}
+
+// GAME 05
+.game05 {
+	.spot-1 {
+		left: calc(7%);
+		top: calc(18%);
+	}
+
+	.spot-2 {
+		left: calc(30%);
+		top: calc(58%);
+	}
+
+	.spot-3 {
+		left: calc(82%);
+		top: calc(44%);
+	}
+
+	.spot-4 {
+		left: calc(43%);
+		top: calc(26%);
+	}
+
+	.spot-5 {
+		left: calc(10%);
+		top: calc(48%);
+	}
+
+	.spot-6 {
+		left: calc(43%);
+		top: calc(69%);
+	}
+
+	.spot-7 {
+		left: calc(56%);
+		top: calc(44%);
+	}
+
+	.spot-8 {
+		left: calc(78%);
+		top: calc(60%);
+	}
+
+	.spot-9 {
+		left: calc(87%);
+		top: calc(2%);
+	}
+
+	.spot-10 {
+		left: calc(30%);
+		top: calc(12%);
+	}
+}
+
 // Large screens
 @media (min-width: 1600px) {
 }
@@ -610,6 +716,112 @@ hr {
 		.spot-10 {
 			left: calc(89% - 2%);
 			top: calc(7% - 2%);
+		}
+	}
+
+	// GAME 04
+	.game04 {
+		.spot-1 {
+			left: calc(20% - 2%);
+			top: calc(22% - 2%);
+		}
+
+		.spot-2 {
+			left: calc(33% - 2%);
+			top: calc(75% - 2%);
+		}
+
+		.spot-3 {
+			left: calc(8% - 2%);
+			top: calc(76% - 2%);
+		}
+
+		.spot-4 {
+			left: calc(41% - 2%);
+			top: calc(5% - 2%);
+		}
+
+		.spot-5 {
+			left: calc(1% - 2%);
+			top: calc(53% - 2%);
+		}
+
+		.spot-6 {
+			left: calc(62% - 2%);
+			top: calc(68% - 2%);
+		}
+
+		.spot-7 {
+			left: calc(40% - 2%);
+			top: calc(44% - 2%);
+		}
+
+		.spot-8 {
+			left: calc(68% - 2%);
+			top: calc(52% - 2%);
+		}
+
+		.spot-9 {
+			left: calc(66% - 2%);
+			top: calc(18% - 2%);
+		}
+
+		.spot-10 {
+			left: calc(30% - 2%);
+			top: calc(12% - 2%);
+		}
+	}
+
+	// GAME 05
+	.game05 {
+		.spot-1 {
+			left: calc(7% - 2%);
+			top: calc(18% - 2%);
+		}
+
+		.spot-2 {
+			left: calc(30% - 2%);
+			top: calc(58% - 2%);
+		}
+
+		.spot-3 {
+			left: calc(82% - 2%);
+			top: calc(44% - 2%);
+		}
+
+		.spot-4 {
+			left: calc(43% - 2%);
+			top: calc(26% - 2%);
+		}
+
+		.spot-5 {
+			left: calc(10% - 2%);
+			top: calc(48% - 2%);
+		}
+
+		.spot-6 {
+			left: calc(43% - 2%);
+			top: calc(69% - 2%);
+		}
+
+		.spot-7 {
+			left: calc(56% - 2%);
+			top: calc(44% - 2%);
+		}
+
+		.spot-8 {
+			left: calc(78% - 2%);
+			top: calc(60% - 2%);
+		}
+
+		.spot-9 {
+			left: calc(87% - 2%);
+			top: calc(2% - 2%);
+		}
+
+		.spot-10 {
+			left: calc(30% - 2%);
+			top: calc(12% - 2%);
 		}
 	}
 
