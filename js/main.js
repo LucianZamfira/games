@@ -9,7 +9,6 @@ $(document).ready(function () {
 	// Card click start
 	$('.card--clickable .link').on('click', function (event) {
 		event.stopPropagation();
-		console.log('clicked', this);
 	});
 
 	$('.card--clickable').on('click', function () {
@@ -46,8 +45,6 @@ $(document).ready(function () {
 
 		$('.guessed').text(actives);
 		$('.qt').text(levels - actives);
-
-		console.log(actives, levels);
 
 		if (actives === levels - 1) {
 			$('.plural').text('ă');
