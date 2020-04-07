@@ -2,15 +2,17 @@ function simulateClick(element) {
 	element.querySelector('.card--clickable-target').click();
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
 	var actives = 0;
+	var levels = parseInt($('.qt').text()) || 10;
+
 	// Card click start
-	$('.card--clickable .link').on('click', function(event) {
+	$('.card--clickable .link').on('click', function (event) {
 		event.stopPropagation();
 		console.log('clicked', this);
 	});
 
-	$('.card--clickable').on('click', function() {
+	$('.card--clickable').on('click', function () {
 		simulateClick(this);
 	});
 	// Card click end
@@ -21,17 +23,17 @@ $(document).ready(function() {
 		audioElement.volume = 0.2;
 	}
 
-	$('.mute-audio').on('click', function() {
+	$('.mute-audio').on('click', function () {
 		event.preventDefault();
 		audioElement.muted = !document.querySelector('.bubble').muted;
 		$(this).toggleClass('muted');
 	});
 
-	$('.figure__spot').on('click', function(event) {
+	$('.figure__spot').on('click', function (event) {
 		event.stopPropagation();
 	});
 
-	$('.figure__spot').on('mouseup', function() {
+	$('.figure__spot').on('mouseup', function () {
 		var spot = '.' + $(this).data('spot');
 		var audioSpark = document.querySelector('.chime');
 
@@ -43,12 +45,14 @@ $(document).ready(function() {
 		actives = $('.figure__spot.show').length / 2;
 
 		$('.guessed').text(actives);
-		$('.qt').text(10 - actives);
+		$('.qt').text(levels - actives);
 
-		if (actives === 9) {
+		console.log(actives, levels);
+
+		if (actives === levels - 1) {
 			$('.plural').text('ă');
 			$('.singular').text('');
-		} else if (actives === 10) {
+		} else if (actives === levels) {
 			$('.headline-section').addClass('hide');
 			$('body').addClass('youwon');
 		} else {
@@ -57,7 +61,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.figure__container').on('click', function() {
+	$('.figure__container').on('click', function () {
 		var audioBoing = document.querySelector('.boing');
 		audioBoing.pause();
 		audioBoing.currentTime = 0;
